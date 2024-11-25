@@ -1,7 +1,7 @@
 from Animal import Animal
 
 class Cat(Animal):
-    def __init__(self, name, color):
+    def __init__(self, name: str, color: str):
         super().__init__(name, "Кошка")
         self.color = color
 

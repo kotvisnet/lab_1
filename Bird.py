@@ -1,7 +1,7 @@
 from Animal import Animal
 
 class Bird(Animal):
-    def __init__(self, name, wing_span):
+    def __init__(self, name: str, wing_span: str):
         super().__init__(name, "Птица")
         self.wing_span = wing_span
 
