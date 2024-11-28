@@ -1,10 +1,4 @@
 from Animal import Animal
-from Dog import Dog
-from Cat import Cat
-from Shelter import Shelter
-from Bird import Bird
-from AdoptionProcess import  AdoptionProcess
-from Veterinarian import  Veterinarian
 from AnimalJSONHander import AnimalJSONHandler
 from AnimalXMLHandler import AnimalXMLHandler
 

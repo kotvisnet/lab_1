@@ -2,7 +2,6 @@ import json
 from typing import Optional
 from Animal import Animal
 
-
 class AnimalExistsError(Exception):
     pass
 class AnimalNotFoundError(Exception):

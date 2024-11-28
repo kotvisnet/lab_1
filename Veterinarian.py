@@ -2,7 +2,7 @@ from typing import Optional
 from Animal import Animal
 
 class Veterinarian:
-    def __init__(self, name):
+    def __init__(self, name: str):
         self.name = name
 
     def check_health(self, animal: Optional[Animal]):

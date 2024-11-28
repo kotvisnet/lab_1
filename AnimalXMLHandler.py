@@ -78,3 +78,4 @@ class AnimalXMLHandler:
         except AnimalNotFoundError as e:
             print(e)
             return False
+
