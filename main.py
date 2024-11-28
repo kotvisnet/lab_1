@@ -6,36 +6,7 @@ from Bird import Bird
 from AdoptionProcess import  AdoptionProcess
 from Veterinarian import  Veterinarian
 from AnimalJSONHander import AnimalJSONHandler
-
-# Пример использования
-
-# # Создание животных
-# dog = Dog("Бобик", "Овчарка")
-# dogTwo = Dog("Лева", "Дворняга")
-# cat = Cat("Мурка", "Черная")
-# bird = Bird("Кеша", 25)
-#
-# # Создание приюта
-# shelter = Shelter("Приют для животных")
-#
-# # Добавление животных в приют
-# shelter.add_animal(dog)
-# shelter.add_animal(dogTwo)
-# shelter.add_animal(cat)
-# shelter.add_animal(bird)
-#
-# # Просмотр всех животных в приюте
-# print("Все животные в приюте:")
-# shelter.list_animals()
-#
-# # Процесс усыновления
-# adoption_process = AdoptionProcess()
-# adoption_process.start_adoption(dog, "Иван")
-# adoption_process.approve_adoption(dog)
-#
-# # Ветеринар проверяет здоровье
-# vet = Veterinarian("Д-р Петров")
-# vet.check_health(dog)
+from AnimalXMLHandler import AnimalXMLHandler
 
 animal = Animal('Denis', 'Cat')
 print(f"animal:\t{animal}")
@@ -47,6 +18,15 @@ animalJSON.create(animal)
 example = animalJSON.read('Denis')
 
 print(example)
+
+animal = Animal('Leva', 'Dog')
+print(f"animal:\t{animal}")
+
+animalXML = AnimalJSONHandler("C:\\Users\eldor\PycharmProjects\lab1\XML")
+
+animalXML.create(animal)
+
+example = animalXML.read('Leva')
 
 
 
